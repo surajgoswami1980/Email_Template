@@ -1,0 +1,33 @@
+.editor {
+    max-width: 600px;
+    margin: auto;
+    padding: 20px;
+    font-family: Arial, sans-serif;
+    background: #fff;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+  }
+  
+  .editor input,
+  .editor textarea {
+    display: block;
+    width: 100%;
+    margin-bottom: 15px;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+  }
+  
+  .editor button {
+    background-color: #007bff;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  
+  .editor button:hover {
+    background-color: #0056b3;
+  }
+  
