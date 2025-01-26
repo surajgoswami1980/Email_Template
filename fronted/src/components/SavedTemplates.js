@@ -9,7 +9,7 @@ const SavedTemplates = () => {
   useEffect(() => {
     const fetchTemplates = async () => {
       try {
-        const response = await axios.get("http://localhost:5000/api/emails/templates");
+        const response = await axios.get("https://backend-email-107.vercel.app/api/emails/templates");
         setTemplates(response.data);
       } catch (error) {
         console.error("Error fetching templates:", error);
@@ -29,7 +29,7 @@ const SavedTemplates = () => {
 
     try {
       const response = await axios.post(
-        "http://localhost:5000/api/emails/render-download",
+        "https://backend-email-107.vercel.app/api/emails/render-download",
         emailData,
         {
           responseType: "blob", // Ensure the response is treated as a file

@@ -16,7 +16,7 @@ const EmailEditor = () => {
     formData.append("image", e.target.files[0]);
   
     try {
-      const response = await axios.post("http://localhost:5000/api/emails/upload-image", formData);
+      const response = await axios.post("https://backend-email-107.vercel.app/api/emails/upload-image", formData);
       setImage(response.data.imageUrl);
       alert("Image uploaded successfully!");
     } catch (error) {
@@ -29,7 +29,7 @@ const EmailEditor = () => {
   const handleSaveTemplate = async () => {
     const emailData = { title, content, footer, imageUrl: image };
     try {
-      await axios.post("http://localhost:5000/api/emails/save-template", emailData);
+      await axios.post("https://backend-email-107.vercel.app/api/emails/save-template", emailData);
       alert("Template saved successfully!");
     } catch (error) {
       console.error("Failed to save template:", error);

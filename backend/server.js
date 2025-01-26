@@ -33,9 +33,8 @@ mongoose
 // Routes
 app.use("/api/emails", emailRoutes);
 app.get("/", (req, res) => {
-  res.json({ message: "Welcome to the backend server!" });
+  res.send("Welcome to the backend server!");
 });
-
 
 
 // Start Server using environment variable for PORT
